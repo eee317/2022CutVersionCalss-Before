@@ -1,0 +1,164 @@
+
+.content {
+  padding: 0px 42px;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+section {
+  padding: 60px 0px;
+  display: flex;
+}
+.list {
+  width: 300px;
+  li, .list-title {
+    padding: 16px 64px;
+  }
+  li {
+    border: 1px solid $success;
+    border-top: none;
+    &:hover{
+      background-color: $success;
+    }
+  }
+}
+.products {
+  width: 640px;
+  .product {
+    display: flex;
+    flex-wrap: wrap;
+    li {
+      width: 50%;
+      padding-left: 20px;
+      padding-bottom: 20px;
+    }
+  }
+  .product-container {
+    display: flex;
+    text-align: center;
+    color: $primary;
+  }
+  .product-name {
+    padding: 18px 0px;
+    width: 173px;
+    border-left: 1px solid $success;
+    border-right: 1px solid $success;
+  }
+  .price {
+    padding: 18px 0px;
+    width: 127px;
+    border-right: 1px solid $success;
+  }
+}
+@mixin page-arrow($url) {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url($url);
+}
+.pages {
+  display: flex;
+  justify-content:end;
+  margin-top: 10px;
+  align-items: center;
+  color: $primary;
+  .page-active {
+    background-color: $primary;
+    color: #fff;
+    a {
+      color: #fff;
+    }
+    & a:hover {
+      background-color: $primary-dark;
+      color: #fff;
+    }
+  }
+  li {
+    border-left: 1px solid $success;
+    border-top: 1px solid $success;
+    border-bottom: 1px solid $success;
+    a {
+      display: block;
+      padding: 22px 24px;
+      height: 60px;
+      width: 60px;
+      &.img-page-left {
+        @include page-arrow('https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/arrow_left.png?raw=true');
+      }
+      &.img-page-right {
+        @include page-arrow('https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/arrow_right.png?raw=true');
+        border-right: 1px solid $success;
+      }
+      &:hover {
+        background-color: $success;
+      }
+    }
+  }
+}
+.email-area {
+  background-color: $primary;
+  padding: 30px 0px;
+  .email-title {
+    display: flex;
+    align-items: center;
+    width: 276px;
+    img {
+      margin-right: 20px;
+    }
+  }
+  .email-input {
+    background-color: $success;
+    display: flex;
+    align-items: center;
+  }
+  h2 {
+    color: #fff;
+  }
+  input {
+    width: 252px;
+    padding: 20px 10px;
+    border: none;
+    background-color: $success;
+    color: $primary;
+    &:focus{
+      outline: none;
+    }
+  }
+  i {
+    padding: 20px;
+    font-size: 16px;
+  }
+}
+.footer-padding {
+  padding: 0px 122px;
+}
+.email-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-content {
+  background-color: $success;
+  padding: 30px 0px;
+}
+.footer-container {
+  color: $primary;
+  height: 250px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+.footer-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  p {
+    line-height: 1.5;
+  }
+}
+.footer-bottom {
+  margin-top: 30px;
+  color: $primary;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+

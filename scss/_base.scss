@@ -1,0 +1,25 @@
+h1 {
+  display: none;
+}
+h2 {
+  font-size: 24px;
+}
+h3 {
+  font-size: 23px;
+}
+h4 {
+  font-size: 20px;
+}
+p {
+  font-size: 16px;
+}
+a {
+  text-decoration: none;
+  color: $primary;
+}
+nav {
+  padding: 30px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
