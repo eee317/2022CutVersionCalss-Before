@@ -2,7 +2,6 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;600&family=Tiro+Tamil&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -278,16 +277,6 @@ nav {
 .font-Helvetica-Neue {
   font-family: 'Helvetica Neue';
   font-weight: lighter;
-}
-
-.footer-title {
-  -webkit-writing-mode: vertical-lr;
-  -ms-writing-mode: tb-lr;
-      writing-mode: vertical-lr;
-  line-height: 1.5;
-  font-family: 'Noto Serif TC', serif;
-  font-weight: bolder;
-  letter-spacing: 3px;
 }
 
 .text-indent {
