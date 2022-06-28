@@ -95,6 +95,9 @@
 .send-icon {
   color: $primary;
   background-color: $warn;
+  &:hover {
+    background-color: #fff;
+  }
 }
 .font-Times {
   font-family: 'Times';
